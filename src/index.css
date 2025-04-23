@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  @keyframes fadeSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-slide {
+    animation: fadeSlide 1s ease-out forwards;
+  }
+
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  .animate-fade-out {
+    animation: fade-out 1s ease-out forwards;
+  }
+  
+  
