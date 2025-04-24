@@ -4,17 +4,17 @@ const speakers = [
   {
     nombre: 'Ejemplo Speaker 1',
     titulo: 'CEO de Empresa Tech',
-    imagen: '/src/assets/logo.png',
+    imagen: '/logo.png', 
   },
   {
     nombre: 'Ejemplo Speaker 2',
     titulo: 'Especialista en Innovación',
-    imagen: '/src/assets/logo.png',
+    imagen: '/logo.png',
   },
   {
     nombre: 'Ejemplo Speaker 3',
     titulo: 'Consultor en Eventos Digitales',
-    imagen: '/src/assets/logo.png',
+    imagen: '/logo.png',
   },
 ];
 
@@ -38,7 +38,6 @@ function Speakers() {
                 src={s.imagen}
                 alt={s.nombre}
                 className="w-40 h-40 mx-auto rounded-full object-cover border-4 border-blue-500 shadow-lg"
-                data-aos="zoom-in"
               />
               <div className="mt-4">
                 <h3 className="text-xl font-semibold text-blue-300">{s.nombre}</h3>
@@ -53,4 +52,3 @@ function Speakers() {
 }
 
 export default Speakers;
-

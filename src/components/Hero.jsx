@@ -1,12 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Hero() {
+  const [mostrarAlerta, setMostrarAlerta] = useState(true);
+
   useEffect(() => {}, []);
 
   return (
     <div className="flex flex-col">
+      {/* Alerta cerrable */}
+      {mostrarAlerta && (
+        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-yellow-300 text-black px-4 py-3 rounded shadow-md max-w-md w-[90%]">
+          <div className="flex justify-between items-start">
+            <div className="text-sm">
+              ⚠️ Estamos trabajando en el sitio. Puede haber ajustes visuales. Gracias por tu paciencia.
+            </div>
+            <button
+              className="ml-4 font-bold text-black"
+              onClick={() => setMostrarAlerta(false)}
+            >
+              ✖
+            </button>
+          </div>
+        </div>
+      )}
+
       <main className="relative w-full overflow-hidden text-white">
-        <section id="inicio" className="relative w-full h-[600px]">
+        <section id="inicio" className="relative w-full h-[500px] sm:h-[600px]">
           <video
             src="/cedi.mp4"
             autoPlay
@@ -19,14 +38,14 @@ function Hero() {
           <div className="absolute inset-0 bg-black/60 z-0" />
 
           <div
-            className="absolute left-10 top-1/2 transform -translate-y-1/2 max-w-xl z-10 text-left"
+            className="absolute left-5 right-5 sm:left-10 sm:right-auto top-1/2 transform -translate-y-1/2 max-w-xl z-10 text-left"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
-            <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-500 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-500 bg-clip-text text-transparent leading-tight">
               Connect GA.IA Edition
             </h1>
 
-            <p className="text-lg mt-4 text-white/90">
+            <p className="text-base sm:text-lg mt-3 sm:mt-4 text-white/90 leading-snug">
               Una experiencia para construir tecnologías que se integren armónicamente con el ecosistema urbano y social desde la innovación. Una evolución hacia un futuro más conectado.
             </p>
 
@@ -34,7 +53,7 @@ function Hero() {
               href="https://shorturl.at/bDbQY"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-block px-6 py-3 border border-white text-white font-semibold rounded hover:bg-white hover:text-blue-600 transition"
+              className="mt-6 sm:mt-8 inline-block px-5 py-2 sm:px-6 sm:py-3 border border-white text-white font-semibold rounded hover:bg-white hover:text-blue-600 transition"
             >
               Registro
             </a>
@@ -59,7 +78,7 @@ function Hero() {
               </p>
             </div>
 
-            <div className="mt-6 flex items-center gap-2 text-white/80 text-sm">
+            <div className="mt-4 sm:mt-6 flex items-center gap-2 text-white/80 text-sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 text-blue-400"
