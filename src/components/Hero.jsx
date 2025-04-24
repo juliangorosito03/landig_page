@@ -1,24 +1,12 @@
 import React, { useEffect } from 'react';
-import headerConnect from '../assets/Header-Connect.jpg'; // imagen actual
 
 function Hero() {
   useEffect(() => {}, []);
 
   return (
     <div className="flex flex-col">
-      {/* Header visual sin bordes, altura ajustada */}
-      <header className="w-full h-[240px] overflow-hidden">
-        <img
-          src={headerConnect}
-          alt="Header Connect"
-          className="w-full h-full object-cover"
-        />
-      </header>
-
-      {/* Sección principal con video */}
       <main className="relative w-full overflow-hidden text-white">
         <section id="inicio" className="relative w-full h-[600px]">
-          {/* Video de fondo */}
           <video
             src="/cedi.mp4"
             autoPlay
@@ -28,10 +16,8 @@ function Hero() {
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
           />
 
-          {/* Capa oscura para contraste */}
           <div className="absolute inset-0 bg-black/60 z-0" />
 
-          {/* Contenido textual */}
           <div
             className="absolute left-10 top-1/2 transform -translate-y-1/2 max-w-xl z-10 text-left"
             style={{ fontFamily: "'Poppins', sans-serif" }}
