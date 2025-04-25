@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Evento from './components/Evento';
+import Evento from './components/Evento';  
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Ubicacion from './components/Ubicacion';
@@ -13,8 +13,7 @@ import Footer from './components/Footer';
 import Agenda from './components/Agenda';
 import Speakers from './components/Speakers';
 import FAQ from './components/FAQ';
-
-
+import Acompanian from './components/Acompanian';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +33,7 @@ function App() {
           <Navbar />
           <Hero />
           <Evento />
+          <Acompanian /> 
           <Agenda />
           <Speakers />
           <Services />
@@ -48,4 +48,3 @@ function App() {
 }
 
 export default App;
-
