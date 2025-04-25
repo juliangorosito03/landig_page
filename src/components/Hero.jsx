@@ -1,104 +1,72 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import tituloImg from '../assets/loading.png';
 
 function Hero() {
-  const [mostrarAlerta, setMostrarAlerta] = useState(true);
-
-  useEffect(() => {}, []);
-
   return (
-    <div className="flex flex-col">
-      {/* Alerta cerrable */}
-      {mostrarAlerta && (
-        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-yellow-300 text-black px-4 py-3 rounded shadow-md max-w-md w-[90%]">
-          <div className="flex justify-between items-start">
-            <div className="text-sm">
-              ⚠️ Estamos trabajando en el sitio. Puede haber ajustes visuales. Gracias por tu paciencia.
-            </div>
-            <button
-              className="ml-4 font-bold text-black"
-              onClick={() => setMostrarAlerta(false)}
-            >
-              ✖
-            </button>
-          </div>
-        </div>
-      )}
+    <section
+      id="inicio"
+      className="relative h-screen w-full overflow-hidden text-white"
+    >
+      <video
+        src="/cedi.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
 
-      <main className="relative w-full overflow-hidden text-white">
-        <section id="inicio" className="relative w-full h-[500px] sm:h-[600px]">
-          <video
-            src="/cedi.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          />
+      <div className="absolute inset-0 bg-black/60 z-0" />
 
-          <div className="absolute inset-0 bg-black/60 z-0" />
+      <div
+        className="absolute left-10 top-1/2 transform -translate-y-1/2 max-w-xl z-10 text-left space-y-6"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        <img
+          src={tituloImg}
+          alt="Connect GA.IA Edition"
+          className="w-[300px] md:w-[400px] h-auto"
+          data-aos="fade-up"
+        />
 
-          <div
-            className="absolute left-5 right-5 sm:left-10 sm:right-auto top-1/2 transform -translate-y-1/2 max-w-xl z-10 text-left"
-            style={{ fontFamily: "'Poppins', sans-serif" }}
+        <p className="text-lg text-white/90" data-aos="fade-up" data-aos-delay="100">
+          Una experiencia para construir tecnologías que se integren armónicamente con el ecosistema urbano y social desde la innovación. Una evolución hacia un futuro más conectado.
+        </p>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+          <a
+            href="https://shorturl.at/bDbQY"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 border border-white text-white font-semibold rounded hover:bg-white hover:text-blue-600 transition"
           >
-            <h1 className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-500 bg-clip-text text-transparent leading-tight">
-              Connect GA.IA Edition
-            </h1>
+            Registro
+          </a>
+        </div>
 
-            <p className="text-base sm:text-lg mt-3 sm:mt-4 text-white/90 leading-snug">
-              Una experiencia para construir tecnologías que se integren armónicamente con el ecosistema urbano y social desde la innovación. Una evolución hacia un futuro más conectado.
-            </p>
+        <p className="text-sm text-white/70" data-aos="fade-up" data-aos-delay="300">
+          La participación requiere inscripción previa. Los cupos son limitados y estarán sujetos a confirmación.
+        </p>
 
-            <a
-              href="https://shorturl.at/bDbQY"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 sm:mt-8 inline-block px-5 py-2 sm:px-6 sm:py-3 border border-white text-white font-semibold rounded hover:bg-white hover:text-blue-600 transition"
-            >
-              Registro
-            </a>
-
-            <div className="flex items-start gap-2 mt-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-blue-400 mt-0.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5.121 17.804A13.937 13.937 0 0112 15c2.905 0 5.584.929 7.879 2.504M15 10a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
-              <p className="text-sm text-white/70">
-                La participación requiere inscripción previa. Los cupos son limitados y estarán sujetos a confirmación.
-              </p>
-            </div>
-
-            <div className="mt-4 sm:mt-6 flex items-center gap-2 text-white/80 text-sm">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-blue-400"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17.657 16.657L13.414 12.414A2 2 0 0012 12H12a2 2 0 00-1.414.586l-4.243 4.243m5.657-10.243a4 4 0 015.656 5.657L12 21l-6.364-6.364a4 4 0 015.656-5.657z"
-                />
-              </svg>
-              Humberto Primo 630 · Piso 5 Oficina F56 · Capitalinas · Córdoba
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+        <div className="flex items-center gap-2 text-white/80 text-sm" data-aos="fade-up" data-aos-delay="400">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 text-blue-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M17.657 16.657L13.414 12.414A2 2 0 0012 12H12a2 2 0 00-1.414.586l-4.243 4.243m5.657-10.243a4 4 0 015.656 5.657L12 21l-6.364-6.364a4 4 0 015.656-5.657z"
+            />
+          </svg>
+          Hotel Quinto Centenario - Córdoba Capital
+        </div>
+      </div>
+    </section>
   );
 }
 
