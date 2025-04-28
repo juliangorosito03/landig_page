@@ -8,7 +8,7 @@ function SomosCedi() {
 
       <div className="flex justify-center mt-4">
         <img 
-          src="/public/GrupoCedi.png" 
+          src="/GrupoCedi.png" 
           alt="Logo Grupo CEDI" 
           className="h-24 w-auto" 
         />
