@@ -5,15 +5,15 @@ import 'aos/dist/aos.css';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Evento from './components/Evento';  
-import Services from './components/Services';
-import Projects from './components/Projects';
-import Ubicacion from './components/Ubicacion';
-import Footer from './components/Footer';
+import Evento from './components/Evento';
+import Acompanian from './components/Acompanian';
+import SomosCedi from './components/SomosCedi';
 import Agenda from './components/Agenda';
 import Speakers from './components/Speakers';
+import Services from './components/Services';
+import Projects from './components/Projects';
 import FAQ from './components/FAQ';
-import Acompanian from './components/Acompanian';
+import Footer from './components/Footer';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,13 +33,23 @@ function App() {
           <Navbar />
           <Hero />
           <Evento />
-          <Acompanian /> 
+          <Acompanian />
+          <SomosCedi />
           <Agenda />
           <Speakers />
           <Services />
           <Projects />
           <FAQ />
-          <Ubicacion />
+
+          <div className="w-full bg-[#0e0e0e] flex justify-center py-8">
+            <img 
+              src="/cedi-footer.png" 
+              alt="Footer Grupo CEDI" 
+              className="h-24 md:h-30 lg:h-30 object-contain"
+              data-aos="fade-up"
+            />
+          </div>
+
           <Footer />
         </div>
       )}

@@ -2,17 +2,10 @@ import React, { useState } from 'react';
 
 const faqs = [
   {
-    pregunta: 'Ejemplo de pregunta frecuente 1',
-    respuesta: 'Ejemplo de respuesta 1.',
+    pregunta: '¿La entrada tiene costo?',
+    respuesta: 'No, la entrada es libre y gratuita. Los cupos son limitados, por lo que deberás aguardar nuestra confirmación por correo electrónico. La misma constará de un código QR que será único e intransferible para poder ingresar al evento.',
   },
-  {
-    pregunta: 'Ejemplo de pregunta frecuente 2',
-    respuesta: 'Otra respuesta de ejemplo, pensada para ser reemplazada por información real más adelante.',
-  },
-  {
-    pregunta: 'Ejemplo de pregunta frecuente 3',
-    respuesta: 'Este texto es solo demostrativo. Luego se puede actualizar con los detalles oficiales del evento.',
-  },
+  
 ];
 
 function FAQ() {
