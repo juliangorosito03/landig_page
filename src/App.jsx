@@ -35,9 +35,9 @@ function App() {
           <Evento />
           <Acompanian />
           <SomosCedi />
+          <Services />
           <Agenda />
           <Speakers />
-          <Services />
           <Projects />
           <FAQ />
 
