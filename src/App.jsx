@@ -35,9 +35,9 @@ function App() {
           <Evento />
           <Acompanian />
           <SomosCedi />
-          <Services />
           <Agenda />
           <Speakers />
+          <Services />
           <Projects />
           <FAQ />
 
@@ -45,7 +45,7 @@ function App() {
             <img 
               src="/cedi-footer.png" 
               alt="Footer Grupo CEDI" 
-              className="h-24 md:h-30 lg:h-30 object-contain"
+              className="h-24 md:h-28 lg:h-32 object-contain"
               data-aos="fade-up"
             />
           </div>
