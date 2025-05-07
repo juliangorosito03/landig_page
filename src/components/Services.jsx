@@ -30,7 +30,7 @@ function Services() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 max-w-7xl">
         <div
-          className="border border-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 flex flex-col items-center"
+          className="bg-white/20 text-white border border-white/10 p-6 rounded-2xl shadow-md hover:scale-105 transition-transform duration-300 flex flex-col items-center backdrop-blur-md"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -45,7 +45,7 @@ function Services() {
         </div>
 
         <div
-          className="border border-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 flex flex-col items-center"
+          className="bg-white/20 text-white border border-white/10 p-6 rounded-2xl shadow-md hover:scale-105 transition-transform duration-300 flex flex-col items-center backdrop-blur-md"
           data-aos="fade-up"
           data-aos-delay="300"
         >
@@ -59,7 +59,7 @@ function Services() {
         </div>
 
         <div
-          className="border border-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 flex flex-col items-center"
+          className="bg-white/20 text-white border border-white/10 p-6 rounded-2xl shadow-md hover:scale-105 transition-transform duration-300 flex flex-col items-center backdrop-blur-md"
           data-aos="fade-up"
           data-aos-delay="400"
         >
@@ -73,7 +73,7 @@ function Services() {
         </div>
 
         <div
-          className="border border-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 flex flex-col items-center"
+          className="bg-white/20 text-white border border-white/10 p-6 rounded-2xl shadow-md hover:scale-105 transition-transform duration-300 flex flex-col items-center backdrop-blur-md"
           data-aos="fade-up"
           data-aos-delay="500"
         >

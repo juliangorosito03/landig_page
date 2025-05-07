@@ -26,6 +26,7 @@ function Acompanian() {
     { src: '/logo12.png', alt: 'Vmware' },
     { src: '/logo6.png', alt: 'Imperva' },
     { src: '/logo13.png', alt: 'IBM' },
+    { src: '/logo17.png', alt: 'PiBi' }, 
     { src: '/logo5.png', alt: 'Paloalto' },
     { src: '/logo11.png', alt: 'Parkplace' },
     { src: '/logo4.png', alt: 'Kaspersky' },
@@ -42,13 +43,14 @@ function Acompanian() {
       id="nos-acompanan"
       className="py-24 text-white font-[Space Grotesk]"
       style={{
-        background: 'linear-gradient(to right, #7704E0 0%, #00D6AE 30%, #23255A 70%, #6C6CFF 100%), rgba(0, 0, 0, 0.5)',
-        backgroundBlendMode: 'overlay'
+        background:
+          'linear-gradient(to right, #7704E0 0%, #00D6AE 30%, #23255A 70%, #6C6CFF 100%), rgba(0, 0, 0, 0.5)',
+        backgroundBlendMode: 'overlay',
       }}
     >
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2
-          className="relative text-4xl font-bold text-[#00D6AE] drop-shadow-md inline-block pb-3"
+          className="relative text-4xl font-bold text-[#00D6AE] drop-shadow-md inline-block pb-3 mx-auto"
           style={{ WebkitTextStroke: '0.5px black', width: 'fit-content' }}
           data-aos="fade-up"
         >
@@ -56,17 +58,20 @@ function Acompanian() {
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-16 h-1 bg-[#00D6AE] rounded-full"></span>
         </h2>
 
-        <Slider {...settings}>
-          {logos.map((logo, index) => (
-            <div key={index} className="px-4 py-4">
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="mx-auto max-h-20 object-contain"
-              />
-            </div>
-          ))}
-        </Slider>
+        <div className="mt-10">
+          <Slider {...settings}>
+            {logos.map((logo, index) => (
+              <div key={index} className="px-4 py-4 flex items-center justify-center">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-h-20 object-contain"
+                  style={{ background: 'transparent' }}
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </section>
   );
