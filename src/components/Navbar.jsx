@@ -17,7 +17,6 @@ function Navbar() {
       }`}
     >
       <div className="flex items-center justify-center gap-5">
-        {/* Logo + Menú como bloque único */}
         <img src={logo} alt="Logo CEDI" className="h-10 w-auto" />
 
         <nav>
@@ -25,7 +24,6 @@ function Navbar() {
             <li><a href="#evento" className="hover:text-blue-600 transition">Evento</a></li>
             <li><a href="#agenda" className="hover:text-blue-600 transition">Agenda</a></li>
             <li><a href="#speakers" className="hover:text-blue-600 transition">Speakers</a></li>
-            <li><a href="#faq" className="hover:text-blue-600 transition">FAQ</a></li>
           </ul>
         </nav>
       </div>
