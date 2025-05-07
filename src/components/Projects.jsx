@@ -2,12 +2,25 @@ import React from 'react';
 
 function Projects() {
   return (
-    <section id="proyectos" className="py-24 bg-[#0e0e0e] text-white">
+    <section
+      id="proyectos"
+      className="py-24 text-white font-[Space Grotesk]"
+      style={{
+        background: 'linear-gradient(to right, #7704E0 0%, #00D6AE 30%, #23255A 70%, #6C6CFF 100%), rgba(0, 0, 0, 0.5)',
+        backgroundBlendMode: 'overlay',
+      }}
+    >
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-blue-400 mb-6" data-aos="fade-up">
+        <h2
+          className="relative text-4xl font-bold text-[#00D6AE] drop-shadow-md inline-block pb-3 mx-auto"
+          style={{ WebkitTextStroke: '0.5px black', width: 'fit-content' }}
+          data-aos="fade-up"
+        >
           Ediciones anteriores
+          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-16 h-1 bg-[#00D6AE] rounded-full"></span>
         </h2>
-        <p className="text-white/80 max-w-xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="100">
+
+        <p className="text-white/80 max-w-xl mx-auto mb-12 mt-6" data-aos="fade-up" data-aos-delay="100">
           Reviví los momentos más destacados de los eventos anteriores.
         </p>
 
@@ -70,7 +83,7 @@ function Projects() {
             href="https://events.teams.microsoft.com/event/878e4c12-01ec-43d5-a1ad-d764e514046f@adeee945-465d-469f-9c10-bbf55bed49ea"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-xl transition duration-300"
+            className="inline-block bg-[#00D6AE] hover:bg-[#00c3a0] text-white font-semibold py-3 px-6 rounded-xl transition duration-300"
           >
             Registrate
           </a>
