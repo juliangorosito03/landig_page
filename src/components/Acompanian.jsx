@@ -26,7 +26,7 @@ function Acompanian() {
     { src: '/logo12.png', alt: 'Vmware' },
     { src: '/logo6.png', alt: 'Imperva' },
     { src: '/logo13.png', alt: 'IBM' },
-    { src: '/logo17.png', alt: 'PiBi' }, 
+    { src: '/logo16.png', alt: 'PiBi' },
     { src: '/logo5.png', alt: 'Paloalto' },
     { src: '/logo11.png', alt: 'Parkplace' },
     { src: '/logo4.png', alt: 'Kaspersky' },
@@ -58,15 +58,14 @@ function Acompanian() {
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-16 h-1 bg-[#00D6AE] rounded-full"></span>
         </h2>
 
-        <div className="mt-10">
+        <div className="mt-10 px-2 sm:px-4">
           <Slider {...settings}>
             {logos.map((logo, index) => (
-              <div key={index} className="px-4 py-4 flex items-center justify-center">
+              <div key={index} className="px-2 py-4 flex items-center justify-center">
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-20 object-contain"
-                  style={{ background: 'transparent' }}
+                  className="max-h-20 object-contain mx-auto"
                 />
               </div>
             ))}
